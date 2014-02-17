@@ -31,6 +31,11 @@ function cbc_form_alter(&$form, &$form_state, $form_id) {
     return;
   }
 
+  // Check user for permissions.
+  if (!user_access('administer contextual block classes')) {
+    return;
+  }
+
   // Get all the contexts.
   $contexts = context_context_list();
   $classes = cbc_get_block_classes();
@@ -169,9 +174,9 @@ function cbc_preprocess_block(&$vars) {
 }
 
 /**
- * Set the block class variable
- * @param  array  $classes [description]
- * @return [type]          [description]
+ * Save the block class variables into the variables table through variable set.
+ * @param  array  $classes a full array of context and block class settings.
+ * @return Boolean (true if successful)
  */
 function cbc_set_block_classes($classes = array()) {
   if (!is_array($classes)) {
