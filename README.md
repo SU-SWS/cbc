@@ -14,4 +14,4 @@ Install this module like any other module. [See Drupal Documentation](https://dr
 3. Edit or create a new block. admin/structure/block/add
 4. Find the contextual block class(es) collapsible fieldset and expand it.
 5. Enter css classes without a period and separated by spaces into the context of choice. eg: 'clearfix header-one third-class'
-6. Save block and place into a theme region.
+6. Save block and place into a theme region using the context you have assigned a custom class to for the class to go into effect.
