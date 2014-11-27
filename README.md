@@ -3,7 +3,7 @@ This module provides the ability to contextualize block classes. This module is 
 ## Version
 Drupal Core: 7.X
 
-Release Version 7.x-1.0-alpha1
+Release Version 7.x-1.0
 
 ##Installation:
 Install this module like any other module. [See Drupal Documentation](https://drupal.org/documentation/install/modules-themes/modules-7)
