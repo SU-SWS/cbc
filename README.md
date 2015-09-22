@@ -1,8 +1,7 @@
 #Contextual Block Class(es)
 This module provides the ability to contextualize block classes. This module is similar to [contexual_block_class module](https://drupal.org/project/context_block_class) and complements the [block class module](https://drupal.org/project/block_class).
 ## Version
-Drupal Core: 7.X
-
+Drupal Core: 7.X    
 Release Version 7.x-1.0
 
 ##Installation:
